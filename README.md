@@ -1,2 +1,2 @@
-# MyArduinoLib
-Librery for Arduino, including classes to easily manage and interact with several elements.
+# MyArduino
+Resources for Arduino, including classes to easily manage and interact with several elements.
