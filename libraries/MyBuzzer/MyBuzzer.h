@@ -11,7 +11,7 @@
 class MyBuzzer
 {
   private:
-    int pin_vol;
+    unsigned int pin_vol;
 
   public:
     MyBuzzer(
