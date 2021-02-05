@@ -44,8 +44,8 @@ MySonar::MySonar(
 }
 
 int MySonar::GetDist(unsigned int unit = MySonar::UNIT_CENTIMETRES){
-  unsigned int echoTime = this->ping_median();
-  //unsigned int echoTime = max(this->newPing.ping(), this->newPing.ping());
+  //unsigned int echoTime = this->ping_median();
+  unsigned int echoTime = max(this->ping(), this->ping());
 
   return unit == MySonar::UNIT_INCHES ? this->convert_in(echoTime) : this->convert_cm(echoTime);
 }
