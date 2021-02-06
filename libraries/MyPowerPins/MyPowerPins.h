@@ -6,7 +6,7 @@
 #ifndef MyPowerPins_h
 #define MyPowerPins_h
 
-#include <virtuabotixRTC.h>
+#include "arduino.h"
 
 class MyPowerPins
 {
