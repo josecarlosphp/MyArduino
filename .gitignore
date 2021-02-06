@@ -19,3 +19,5 @@
 /Calibrar_servomotor/
 /libraries/ArduinoRTClibrary-master/
 /libraries/Time/
+/libraries/TM1637Display/
+/libraries/TM74HC595Display/
