@@ -6,6 +6,7 @@
 #ifndef MySonar_h
 #define MySonar_h
 
+#include <MyPowerPins.h>
 #include <NewPing.h>
 
 class MySonar : public NewPing
@@ -13,6 +14,7 @@ class MySonar : public NewPing
   private:
     static const unsigned int UNIT_INCHES = 1;
     static const unsigned int UNIT_CENTIMETRES = 0;
+    MyPowerPins powerPins;
 
   public:
     MySonar(

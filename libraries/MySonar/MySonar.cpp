@@ -32,15 +32,7 @@ MySonar::MySonar(
   unsigned int maxDist,
   unsigned int pin_vcc,
   unsigned int pin_gnd
-  ) : NewPing(pin_trigger, pin_sensor, maxDist){
-  if(pin_vcc > 0){
-	pinMode(pin_vcc, OUTPUT);
-	digitalWrite(pin_vcc, HIGH);
-  }
-  if(pin_gnd > 0){
-	pinMode(pin_gnd, OUTPUT);
-	digitalWrite(pin_gnd, LOW);
-  }
+  ) : powerPins(pin_vcc, pin_gnd), NewPing(pin_trigger, pin_sensor, maxDist){
 }
 
 int MySonar::GetDist(unsigned int unit = MySonar::UNIT_CENTIMETRES){
