@@ -6,11 +6,12 @@
 #ifndef MyBluetooth_h
 #define MyBluetooth_h
 
-#include "Arduino.h"
+#include <MyPowerPins.h>
 
 class MyBluetooth
 {
   private:
+    MyPowerPins powerPins;
     unsigned int serial;
 
   public:
