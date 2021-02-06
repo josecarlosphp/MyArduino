@@ -6,11 +6,12 @@
 #ifndef MyBinarySensor_h
 #define MyBinarySensor_h
 
-#include "Arduino.h"
+#include <MyPowerPins.h>
 
 class MyBinarySensor
 {
   private:
+    MyPowerPins powerPins;
     unsigned int pin_out;
 
   public:
