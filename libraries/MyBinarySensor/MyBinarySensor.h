@@ -16,12 +16,19 @@ class MyBinarySensor
 
   public:
     MyBinarySensor(
+      unsigned int pin_out
+      );
+    MyBinarySensor(
       unsigned int pin_out,
-      unsigned int pin_vcc = 0,
-      unsigned int pin_gnd = 0
+      unsigned int pin_vcc
+      );
+    MyBinarySensor(
+      unsigned int pin_out,
+      unsigned int pin_vcc,
+      unsigned int pin_gnd
       );
 
-    int Read();
+    bool Read();
 };
 
 #endif
