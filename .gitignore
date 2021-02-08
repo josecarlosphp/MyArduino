@@ -22,3 +22,5 @@
 /libraries/TM1637Display/
 /libraries/TM74HC595Display/
 /libraries/MultiFuncShield-Library/
+/libraries/RTClib-master/
+/libraries/SdFat-master/
