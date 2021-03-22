@@ -83,7 +83,32 @@ void MyServo::TurnUp(unsigned int degrees){
 }
 
 void MyServo::Turn(int degrees){
-    this->write(this->servo.read() + degrees);
+    this->write(this->read() + degrees);
+}
+
+void MyServo::TurnTo(unsigned int degrees){
+    TurnTo(degrees, 15);
+}
+
+void MyServo::TurnTo(unsigned int degrees, unsigned int idelay){
+    unsigned int d = this->read();
+
+    if(d < degrees)
+    {
+        for(unsigned int c=d; c<degrees; c++)
+        {
+            this->write(c);
+            delay(idelay);
+        }
+    }
+    else if(d > degrees)
+    {
+        for(unsigned int c=d; c>degrees; c--)
+        {
+            this->write(c);
+            delay(idelay);
+        }
+    }
 }
 
 void MyServo::attach(

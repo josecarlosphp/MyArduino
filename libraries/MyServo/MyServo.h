@@ -57,6 +57,8 @@ class MyServo
     void TurnUp();
     void TurnUp(unsigned int degrees);
     void Turn(int degrees);
+    void TurnTo(unsigned int degrees);
+    void TurnTo(unsigned int degrees, unsigned int idelay);
 
     void attach(unsigned int pin);
     void write(unsigned int angle);
