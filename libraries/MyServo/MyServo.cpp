@@ -83,7 +83,7 @@ void MyServo::TurnUp(unsigned int degrees){
 }
 
 void MyServo::Turn(int degrees){
-    this->servo.write(this->servo.read() + degrees);
+    this->write(this->servo.read() + degrees);
 }
 
 void MyServo::attach(
