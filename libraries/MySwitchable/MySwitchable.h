@@ -25,6 +25,9 @@ class MySwitchable
       unsigned int pin_gnd,
       bool on
       );
+    void On();
+    void Off();
+    bool Toggle();
 };
 
 #endif

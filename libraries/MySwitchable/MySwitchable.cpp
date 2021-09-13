@@ -26,20 +26,22 @@ MySwitchable::MySwitchable(
   this->Toggle();
 }
 
-MySwitchable::On() {
+void MySwitchable::On() {
   this->on = true;
   digitalWrite(pin_vcc, HIGH);
 }
 
-MySwitchable::Off() {
+void MySwitchable::Off() {
   this->on = false;
   digitalWrite(pin_vcc, LOW);
 }
 
-MySwitchable::Toggle() {
+bool MySwitchable::Toggle() {
   if (this->on) {
       this->Off();
   } else {
       this->On();
   }
+
+  return this->on;
 }
