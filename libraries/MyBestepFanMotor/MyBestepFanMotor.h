@@ -7,13 +7,13 @@
 #define MyBestepFanMotor_h
 
 #include <MyPowerPins.h>
+#include <MyDC.h>
 
 class MyBestepFanMotor
 {
   private:
     MyPowerPins powerPins;
-    unsigned int pin_ina;
-    unsigned int pin_inb;
+    MyDC motor;
 
   public:
     MyBestepFanMotor(
