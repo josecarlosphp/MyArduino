@@ -3,22 +3,26 @@
  * https://josecarlosphp.com
  */
 
-#ifndef MyBestepFanMotor_h
-#define MyBestepFanMotor_h
+#ifndef MyL9110_h
+#define MyL9110_h
 
 #include <MyPowerPins.h>
 #include <MyDC.h>
 
-class MyBestepFanMotor
+class MyL9110
 {
   private:
     MyPowerPins powerPins;
-    MyDC motor;
 
   public:
-    MyBestepFanMotor(
-      unsigned int pin_ina,
-      unsigned int pin_inb,
+    MyDC motorA;
+    MyDC motorB;
+
+    MyL9110(
+      unsigned int pin_Aina,
+      unsigned int pin_Ainb,
+      unsigned int pin_Bina,
+      unsigned int pin_Binb,
       unsigned int pin_vcc = 0,
       unsigned int pin_gnd = 0
       );

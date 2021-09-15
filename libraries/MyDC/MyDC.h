@@ -20,9 +20,9 @@ class MyDC
       unsigned int pin_inb
       );
 
-    void forward(unsigned int speed = 0);
+    void forward(unsigned int speed = 255);
 
-    void reverse(unsigned int speed = 0);
+    void reverse(unsigned int speed = 255);
 
     void stop();
 };
